@@ -1,6 +1,6 @@
 let horn = 
 soundPlay = true
-let aTime = "18:11"
+let aTime = "02:24"
 let makeSound = false
 let soundOnce = true
 var audio = new Audio('/sound/foghorn.mp3');
@@ -43,3 +43,14 @@ $('#stop').click(()=>{
     }
     
 })
+$('#set').click(()=>{
+    console.log(`don't just click it stick it`)
+    $('#modal').modal('toggle');
+})
+save=()=>{
+    console.log('click it or ticket')
+    console.log($('timeWanted').val())
+    aTime = $('#timeWanted').val()
+    console.log(aTime)
+    $('#modal').modal('toggle');
+}
