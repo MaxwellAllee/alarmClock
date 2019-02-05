@@ -14,4 +14,10 @@ checkTime=(i)=>{
     if (i<10) {i = "0"+i};
     return i
 }
-startTime()
+$('#start').click(()=>{
+    $('.snooze').show()
+    $('.bottom').show()
+    startTime()
+})
+$('.snooze').hide()
+$('.bottom').hide()
