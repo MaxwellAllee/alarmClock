@@ -10,7 +10,6 @@ startTime = ()=>{
     }
     current = `${h}:${m}`
     converted = parseInt(current.substring(0, 2)+current.substring(3, 5))
-    console.log(converted)
     $('.time').html(current)
     let t = setTimeout(startTime, 500)
     
